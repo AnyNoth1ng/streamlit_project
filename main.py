@@ -5,15 +5,15 @@ import pandas as pd
 import numpy as np
 
 # read files
-clients = pd.read_csv('/home/egor/HSE/Applied_python/applpython_hw_1/datasets/D_clients.csv')
-close_loan = pd.read_csv('/home/egor/HSE/Applied_python/applpython_hw_1/datasets/D_close_loan.csv')
-job = pd.read_csv('/home/egor/HSE/Applied_python/applpython_hw_1/datasets/D_job.csv')
-last_credit = pd.read_csv('/home/egor/HSE/Applied_python/applpython_hw_1/datasets/D_last_credit.csv')
-loan = pd.read_csv('/home/egor/HSE/Applied_python/applpython_hw_1/datasets/D_loan.csv')
-pens = pd.read_csv('/home/egor/HSE/Applied_python/applpython_hw_1/datasets/D_pens.csv')
-salary = pd.read_csv('/home/egor/HSE/Applied_python/applpython_hw_1/datasets/D_salary.csv')
-target = pd.read_csv('/home/egor/HSE/Applied_python/applpython_hw_1/datasets/D_target.csv')
-work = pd.read_csv('/home/egor/HSE/Applied_python/applpython_hw_1/datasets/D_work.csv')
+clients = pd.read_csv('D_clients.csv')
+close_loan = pd.read_csv('D_close_loan.csv')
+job = pd.read_csv('D_job.csv')
+last_credit = pd.read_csv('D_last_credit.csv')
+loan = pd.read_csv('D_loan.csv')
+pens = pd.read_csv('D_pens.csv')
+salary = pd.read_csv('D_salary.csv')
+target = pd.read_csv('D_target.csv')
+work = pd.read_csv('D_work.csv')
 
 # work with duplicates
 salary = salary.drop_duplicates(keep='first')
